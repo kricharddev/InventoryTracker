@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="Product Name"
+        android:layout_weight=".7"
+        android:maxLines="3"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <Button
+        android:id="@+id/list_sale_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/sale"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="#32CD32"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="bold"
+        tools:text="QTY#"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:textAppearance="?android:textAppearanceSmall"
+        tools:text="$0.00"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</LinearLayout>
